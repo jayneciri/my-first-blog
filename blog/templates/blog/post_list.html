@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title> Zorka's photos </title>
+<meta charset = "utf-8">
+</head>
+
+<body>
+
+<h1>Who's 'Zorka?'</h1>
+<p>She's my dog, Golden Retriever. She's very pretty, isn't she? <3</p>
+<img src="https://1.bp.blogspot.com/-uZlUndoUhzc/Vug4CNLOlQI/AAAAAAAARNE/qoXuzC-SqNE4CNsLArGF1atoh6oIzscJQ/s1600/DSC05962.JPG" alt="Zdjęcie uśmiechniętej zorki" width="350"/>
+..................................
+<h3>Info</h3>
+<ul>
+<li>She's 3 years old.</li>
+<li>Her favourite food is roast chicken.</li>
+<li>She's furry.</li>
+<li>My best friend.</li>
+<li>She loves you all!</li> </ul>
+..................................
+
+<h3>Cute photos</h3>
+<img src="https://i.ytimg.com/vi/JjCmHjn6LFg/hqdefault.jpg" alt="Zorka jako szczeniaczek" width="350"/>
+<img src="https://1.bp.blogspot.com/-jSVLvGV4DWY/VubbKXZMhOI/AAAAAAAARMM/-iQZKeMb6UgYri0b_fObV7n52zR5CiJTg/s1600/12400461_1133812739962141_5526120538089865976_n.jpg" width="350"/>
+<img src="https://scontent.cdninstagram.com/t51.2885-15/s150x150/e35/13118309_229213967448241_1734402963_n.jpg?ig_cache_key=MTI0MzY1MTk5MjA2MjQ3MTU2Nw%3D%3D.2" width="263" />
+
+<p><em>Zorka as a puppy...........................................................................SnowDog :)....................................................................................Dangerous smile</em></p>
+
+<h3> Favourite songs about dogs </h3>
+<p>"The dog that couldn't run" - by Loca the Pug</p>
+<p>"I Love My Dog” - by <strong>Cat</strong>(!) Stevens</p>
+
+
+...................................
+<div>
+    <h2><a href="/">Move to the first paragraph</a></h2>
+</div>
+
+{% for post in posts %}
+    <div>
+        <p>published: {{ post.published_date }}</p>
+        <h1><a href="">{{ post.title }}</a></h1>
+        <p>{{ post.text|linebreaks }}</p>
+    </div>
+{% endfor %}
+
+</ul>
+</body>
+
+</html>
+
